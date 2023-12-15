@@ -388,6 +388,11 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   }
 
   @override
+  void insertContent(KeyboardInsertedContent content) {
+    //TODO
+  }
+
+  @override
   void didUpdateWidget(covariant ChipsInput<T> oldWidget) {
     super.didUpdateWidget(oldWidget);
     _effectiveFocusNode.canRequestFocus = _canRequestFocus;
